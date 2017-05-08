@@ -25,6 +25,9 @@ function Set() {
 
 
     this.union = function (listA, listB) {
+        if (listA === null || listB === null) {
+            return null;
+
         var list1 = this.symmetricDifference(listA, listB);
         var list2 = this.intersection(listA, listB);
 
@@ -62,6 +65,9 @@ function Set() {
 
 
     this.symmetricDifference = function (listA, listB) {
+        if (listA === null || listB === null) {
+            return null;
+        }
         var list1 = this.relativeComplement(listA, listB);
         var list2 = this.relativeComplement(listB, listA);
 
