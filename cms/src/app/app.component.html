@@ -1,14 +1,7 @@
-<cms-header></cms-header>
-<cms-contacts></cms-contacts>
-<!--<div class="container">-->
-  <!--<div class="row">-->
-    <!--<div class="col-xs-12">-->
-      <!--<h1>I am in the App component</h1>-->
-      <!--<hr>-->
-      <!--<cms-contacts></cms-contacts>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</div>-->
-
-
+<cms-header (selectedFeatureEvent)="switchView($event)"></cms-header>
+<div class="container">
+  <cms-documents *ngIf="selectedFeature === 'document'"></cms-documents>
+  <cms-messages *ngIf="selectedFeature === 'messages'"></cms-messages>
+  <cms-contacts *ngIf="selectedFeature === 'contacts'"></cms-contacts>
+</div>
 

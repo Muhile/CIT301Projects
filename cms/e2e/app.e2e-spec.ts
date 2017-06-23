@@ -7,7 +7,7 @@ describe('cms App', () => {
     page = new CmsPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display messages saying app works', () => {
     page.navigateTo();
     expect(page.getParagraphText()).toEqual('cms works!');
   });
