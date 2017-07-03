@@ -1,10 +1,10 @@
 export class Document {
-  public documentId: number;
+  public documentId: string;
   public name: string;
   public description: string;
   public url: string;
 
-  constructor(documentID: number, name: string, description: string, url: string){
+  constructor(documentID: string, name: string, description: string, url: string){
     this.documentId = documentID;
     this.name = name;
     this.description = description;
