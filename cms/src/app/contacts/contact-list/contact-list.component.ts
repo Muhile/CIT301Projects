@@ -12,9 +12,7 @@ export class ContactListComponent implements OnInit {
 
 
 
-onSelected(contact:Contact){
-  this.ContactService.contactSelectedEvent.emit(contact);
-}
+
   constructor(private ContactService: ContactService) {
   this.contacts = this.ContactService.getContacts();
   }
