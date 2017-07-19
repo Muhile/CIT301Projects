@@ -8,6 +8,7 @@ import {DocumentDetailComponent} from "./documents/document-detail/document-deta
 import {ContactEditComponent} from "./contacts/contact-edit/contact-edit.component";
 import {ContactsDetailComponent} from "./contacts/contacts-detail/contacts-detail.component";
 import {ContactStartComponent} from "./contacts/contact-start/contact-start.component";
+import {DndModule} from 'ng2-dnd';
 
 
 const APP_ROUTES: Routes = [
@@ -27,7 +28,7 @@ const APP_ROUTES: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(APP_ROUTES)],
+  imports: [RouterModule.forRoot(APP_ROUTES),DndModule.forRoot()],
     exports: [RouterModule]
 })
 

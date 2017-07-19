@@ -8,21 +8,10 @@
     <div class="panel-body">
       <div class="row">
         <div class="col-xs-12">
-          <cms-contact-item *ngFor="let contact of contacts" [contact]="contact"></cms-contact-item>
+          <cms-contact-item *ngFor="let contact of contacts" [contact]="contact" dnd-draggable [dragEnabled]="true" [dragData]="contact" [dropZones]="['contactGroup']"></cms-contact-item>
         </div>
       </div>
     </div>
 </div>
 </div>
 
-<!--<ul>-->
-<!--<li *ngFor="Contacttact of contactsContacttact.name}}</li>-->
-<!--</ul>-->
-<!--<a href="#" class="list-group-item clearfix" *ngFor="Contacttact of contacts">-->
-<!--<div class="pull-left">-->
-<!--<h4 class="list-group-item-headingContacttact.name}}</h4>-->
-<!--</div>-->
-<!--<span class="pull-right">-->
-<!--<img srContacttact.imageUrl}} alt="" class="img-responsive" style="max-height: 50px;">-->
-<!--</span>-->
-<!--</a>-->
